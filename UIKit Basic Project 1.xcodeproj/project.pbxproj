@@ -34,7 +34,40 @@
 		C7EA19C9248D0EF000DA8632 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA19C8248D0EF000DA8632 /* PhotoViewModel.swift */; };
 		C7F40F132472DDB500B2D7F1 /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F40F122472DDB500B2D7F1 /* PhotoGalleryViewController.swift */; };
 		C7F40F162472FF5100B2D7F1 /* Profiles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F40F152472FF5100B2D7F1 /* Profiles.storyboard */; };
+		EEE74368249642470055EC47 /* UsersViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74367249642470055EC47 /* UsersViewModelTest.swift */; };
+		EEE743762496426C0055EC47 /* UsersTableViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE743752496426C0055EC47 /* UsersTableViewTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE8B6170249640270060B55E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C712D1532471B3AF0049AC4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C712D15A2471B3AF0049AC4C;
+			remoteInfo = "UIKit Basic Project 1";
+		};
+		EE8B617E249640310060B55E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C712D1532471B3AF0049AC4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C712D15A2471B3AF0049AC4C;
+			remoteInfo = "UIKit Basic Project 1";
+		};
+		EEE7436A249642470055EC47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C712D1532471B3AF0049AC4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C712D15A2471B3AF0049AC4C;
+			remoteInfo = "UIKit Basic Project 1";
+		};
+		EEE743782496426C0055EC47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C712D1532471B3AF0049AC4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C712D15A2471B3AF0049AC4C;
+			remoteInfo = "UIKit Basic Project 1";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3498C8013145FE8CDECD164A /* Pods-UIKit Basic Project 1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKit Basic Project 1.release.xcconfig"; path = "Target Support Files/Pods-UIKit Basic Project 1/Pods-UIKit Basic Project 1.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +101,14 @@
 		C7F40F122472DDB500B2D7F1 /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
 		C7F40F152472FF5100B2D7F1 /* Profiles.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profiles.storyboard; sourceTree = "<group>"; };
 		E610A4B0D0538B06586E3607 /* Pods_UIKit_Basic_Project_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKit_Basic_Project_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE8B616B249640270060B55E /* UIKit Basic Project 1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIKit Basic Project 1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE8B6179249640310060B55E /* UIKit Basic Project 1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIKit Basic Project 1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE74365249642470055EC47 /* UIKit Basic Project Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIKit Basic Project Test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE74367249642470055EC47 /* UsersViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModelTest.swift; sourceTree = "<group>"; };
+		EEE74369249642470055EC47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE743732496426C0055EC47 /* UIKit Basic Project UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIKit Basic Project UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE743752496426C0055EC47 /* UsersTableViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewTest.swift; sourceTree = "<group>"; };
+		EEE743772496426C0055EC47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +117,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC6152B2432B34EED3B00DED /* Pods_UIKit_Basic_Project_1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE8B6168249640270060B55E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE8B6176249640310060B55E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE74362249642470055EC47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE743702496426C0055EC47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				C712D15D2471B3AF0049AC4C /* UIKit Basic Project 1 */,
+				EEE74366249642470055EC47 /* UIKit Basic Project Test */,
+				EEE743742496426C0055EC47 /* UIKit Basic Project UITests */,
 				C712D15C2471B3AF0049AC4C /* Products */,
 				0A22514C0FB649A748B5EF25 /* Pods */,
 				D3DB791304CD62341D13A664 /* Frameworks */,
@@ -105,6 +176,10 @@
 			isa = PBXGroup;
 			children = (
 				C712D15B2471B3AF0049AC4C /* UIKit Basic Project 1.app */,
+				EE8B616B249640270060B55E /* UIKit Basic Project 1UITests.xctest */,
+				EE8B6179249640310060B55E /* UIKit Basic Project 1Tests.xctest */,
+				EEE74365249642470055EC47 /* UIKit Basic Project Test.xctest */,
+				EEE743732496426C0055EC47 /* UIKit Basic Project UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -223,6 +298,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EEE74366249642470055EC47 /* UIKit Basic Project Test */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74367249642470055EC47 /* UsersViewModelTest.swift */,
+				EEE74369249642470055EC47 /* Info.plist */,
+			);
+			path = "UIKit Basic Project Test";
+			sourceTree = "<group>";
+		};
+		EEE743742496426C0055EC47 /* UIKit Basic Project UITests */ = {
+			isa = PBXGroup;
+			children = (
+				EEE743752496426C0055EC47 /* UsersTableViewTest.swift */,
+				EEE743772496426C0055EC47 /* Info.plist */,
+			);
+			path = "UIKit Basic Project UITests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -245,6 +338,78 @@
 			productReference = C712D15B2471B3AF0049AC4C /* UIKit Basic Project 1.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EE8B616A249640270060B55E /* UIKit Basic Project 1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE8B6174249640270060B55E /* Build configuration list for PBXNativeTarget "UIKit Basic Project 1UITests" */;
+			buildPhases = (
+				EE8B6167249640270060B55E /* Sources */,
+				EE8B6168249640270060B55E /* Frameworks */,
+				EE8B6169249640270060B55E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE8B6171249640270060B55E /* PBXTargetDependency */,
+			);
+			name = "UIKit Basic Project 1UITests";
+			productName = "UIKit Basic Project 1UITests";
+			productReference = EE8B616B249640270060B55E /* UIKit Basic Project 1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		EE8B6178249640310060B55E /* UIKit Basic Project 1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE8B6180249640310060B55E /* Build configuration list for PBXNativeTarget "UIKit Basic Project 1Tests" */;
+			buildPhases = (
+				EE8B6175249640310060B55E /* Sources */,
+				EE8B6176249640310060B55E /* Frameworks */,
+				EE8B6177249640310060B55E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE8B617F249640310060B55E /* PBXTargetDependency */,
+			);
+			name = "UIKit Basic Project 1Tests";
+			productName = "UIKit Basic Project 1Tests";
+			productReference = EE8B6179249640310060B55E /* UIKit Basic Project 1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EEE74364249642470055EC47 /* UIKit Basic Project Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEE7436E249642470055EC47 /* Build configuration list for PBXNativeTarget "UIKit Basic Project Test" */;
+			buildPhases = (
+				EEE74361249642470055EC47 /* Sources */,
+				EEE74362249642470055EC47 /* Frameworks */,
+				EEE74363249642470055EC47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEE7436B249642470055EC47 /* PBXTargetDependency */,
+			);
+			name = "UIKit Basic Project Test";
+			productName = "UIKit Basic Project Test";
+			productReference = EEE74365249642470055EC47 /* UIKit Basic Project Test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EEE743722496426C0055EC47 /* UIKit Basic Project UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEE7437A2496426C0055EC47 /* Build configuration list for PBXNativeTarget "UIKit Basic Project UITests" */;
+			buildPhases = (
+				EEE7436F2496426C0055EC47 /* Sources */,
+				EEE743702496426C0055EC47 /* Frameworks */,
+				EEE743712496426C0055EC47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEE743792496426C0055EC47 /* PBXTargetDependency */,
+			);
+			name = "UIKit Basic Project UITests";
+			productName = "UIKit Basic Project UITests";
+			productReference = EEE743732496426C0055EC47 /* UIKit Basic Project UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -257,6 +422,22 @@
 				TargetAttributes = {
 					C712D15A2471B3AF0049AC4C = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					EE8B616A249640270060B55E = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = C712D15A2471B3AF0049AC4C;
+					};
+					EE8B6178249640310060B55E = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = C712D15A2471B3AF0049AC4C;
+					};
+					EEE74364249642470055EC47 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = C712D15A2471B3AF0049AC4C;
+					};
+					EEE743722496426C0055EC47 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = C712D15A2471B3AF0049AC4C;
 					};
 				};
 			};
@@ -274,6 +455,10 @@
 			projectRoot = "";
 			targets = (
 				C712D15A2471B3AF0049AC4C /* UIKit Basic Project 1 */,
+				EE8B616A249640270060B55E /* UIKit Basic Project 1UITests */,
+				EE8B6178249640310060B55E /* UIKit Basic Project 1Tests */,
+				EEE74364249642470055EC47 /* UIKit Basic Project Test */,
+				EEE743722496426C0055EC47 /* UIKit Basic Project UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -289,6 +474,34 @@
 				C7DD9A142473648D000243E3 /* PhotoCollectionViewCell.xib in Resources */,
 				C7F40F162472FF5100B2D7F1 /* Profiles.storyboard in Resources */,
 				C712D1662471B3AF0049AC4C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE8B6169249640270060B55E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE8B6177249640310060B55E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE74363249642470055EC47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE743712496426C0055EC47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +577,60 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE8B6167249640270060B55E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE8B6175249640310060B55E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE74361249642470055EC47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE74368249642470055EC47 /* UsersViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE7436F2496426C0055EC47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE743762496426C0055EC47 /* UsersTableViewTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE8B6171249640270060B55E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C712D15A2471B3AF0049AC4C /* UIKit Basic Project 1 */;
+			targetProxy = EE8B6170249640270060B55E /* PBXContainerItemProxy */;
+		};
+		EE8B617F249640310060B55E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C712D15A2471B3AF0049AC4C /* UIKit Basic Project 1 */;
+			targetProxy = EE8B617E249640310060B55E /* PBXContainerItemProxy */;
+		};
+		EEE7436B249642470055EC47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C712D15A2471B3AF0049AC4C /* UIKit Basic Project 1 */;
+			targetProxy = EEE7436A249642470055EC47 /* PBXContainerItemProxy */;
+		};
+		EEE743792496426C0055EC47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C712D15A2471B3AF0049AC4C /* UIKit Basic Project 1 */;
+			targetProxy = EEE743782496426C0055EC47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C712D1642471B3AF0049AC4C /* Main.storyboard */ = {
@@ -538,6 +804,154 @@
 			};
 			name = Release;
 		};
+		EE8B6172249640270060B55E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "UIKit Basic Project 1UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.UIKITBASIC.UIKit-Basic-Project-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UIKit Basic Project 1";
+			};
+			name = Debug;
+		};
+		EE8B6173249640270060B55E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "UIKit Basic Project 1UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.UIKITBASIC.UIKit-Basic-Project-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UIKit Basic Project 1";
+			};
+			name = Release;
+		};
+		EE8B6181249640310060B55E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "UIKit Basic Project 1Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.UIKITBASIC.UIKit-Basic-Project-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIKit Basic Project 1.app/UIKit Basic Project 1";
+			};
+			name = Debug;
+		};
+		EE8B6182249640310060B55E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "UIKit Basic Project 1Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.UIKITBASIC.UIKit-Basic-Project-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIKit Basic Project 1.app/UIKit Basic Project 1";
+			};
+			name = Release;
+		};
+		EEE7436C249642470055EC47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "UIKit Basic Project Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.UIKITBASIC.UIKit-Basic-Project-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIKit Basic Project 1.app/UIKit Basic Project 1";
+			};
+			name = Debug;
+		};
+		EEE7436D249642470055EC47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "UIKit Basic Project Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.UIKITBASIC.UIKit-Basic-Project-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIKit Basic Project 1.app/UIKit Basic Project 1";
+			};
+			name = Release;
+		};
+		EEE7437B2496426C0055EC47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "UIKit Basic Project UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.UIKITBASIC.UIKit-Basic-Project-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UIKit Basic Project 1";
+			};
+			name = Debug;
+		};
+		EEE7437C2496426C0055EC47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "UIKit Basic Project UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.UIKITBASIC.UIKit-Basic-Project-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UIKit Basic Project 1";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -555,6 +969,42 @@
 			buildConfigurations = (
 				C712D1732471B3B10049AC4C /* Debug */,
 				C712D1742471B3B10049AC4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE8B6174249640270060B55E /* Build configuration list for PBXNativeTarget "UIKit Basic Project 1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE8B6172249640270060B55E /* Debug */,
+				EE8B6173249640270060B55E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE8B6180249640310060B55E /* Build configuration list for PBXNativeTarget "UIKit Basic Project 1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE8B6181249640310060B55E /* Debug */,
+				EE8B6182249640310060B55E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEE7436E249642470055EC47 /* Build configuration list for PBXNativeTarget "UIKit Basic Project Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE7436C249642470055EC47 /* Debug */,
+				EEE7436D249642470055EC47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEE7437A2496426C0055EC47 /* Build configuration list for PBXNativeTarget "UIKit Basic Project UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE7437B2496426C0055EC47 /* Debug */,
+				EEE7437C2496426C0055EC47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

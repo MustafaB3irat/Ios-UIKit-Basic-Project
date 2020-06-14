@@ -20,15 +20,15 @@ class UsersViewModel {
         filteredUsers = []
     }
     
-    func fetchUsers(completion: @escaping ([User]) -> Void) {
+    func fetchUsers(completion: @escaping (Result<[User], Error>) -> Void) {
         usersRequest.fetchUsers { [weak self] response in
             switch response {
             case .success(let users):
                 self?.users = users
                 self?.filteredUsers = users
-                completion(self?.filteredUsers ?? [])
+                completion(.success(users))
             case .failure(let error):
-                print(error)
+                completion(.failure(error))
             }
         }
     }

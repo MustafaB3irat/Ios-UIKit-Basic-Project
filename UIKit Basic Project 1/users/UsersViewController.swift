@@ -45,11 +45,17 @@ class UsersViewController: UIViewController {
     
     
     private func fetchUsers() {
-        usersViewModel.fetchUsers { [weak self] users in
+        usersViewModel.fetchUsers { [weak self] response in
             DispatchQueue.main.async {[weak self] in
-                self?.tableView.reloadData()
-                self?.activityIndicator.stopAnimating()
-                self?.activityIndicator.removeFromSuperview()
+                switch response {
+                case .success(_):
+                    self?.tableView.reloadData()
+                    self?.activityIndicator.stopAnimating()
+                    self?.activityIndicator.removeFromSuperview()
+                case .failure(let error):
+                    print(error)
+                }
+                
             }
         }
     }
@@ -102,5 +108,6 @@ extension UsersViewController: UITableViewDataSource {
 extension UsersViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         self.usersViewModel.filterUsers(username: searchController.searchBar.text)
+        self.tableView.reloadData()
     }
 }
