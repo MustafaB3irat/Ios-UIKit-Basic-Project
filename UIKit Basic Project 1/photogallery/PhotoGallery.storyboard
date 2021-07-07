@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xhH-er-Tkb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Gallery-->
+        <scene sceneID="hYS-1Y-rtU">
+            <objects>
+                <viewController id="xhH-er-Tkb" customClass="PhotoGalleryViewController" customModule="UIKit_Basic_Project_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C2S-Hw-3Kx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Vxc-Nc-q94">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="16" id="IP6-xG-mWY">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="50" height="63"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="albumHeader" id="Kgb-FP-lmx" customClass="AlbumHeader" customModule="UIKit_Basic_Project_1" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YmQ-9A-VwU">
+                                            <rect key="frame" x="20" y="20" width="113.5" height="23"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill.on.rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SSX-8y-IBX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="26" height="23"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWk-az-J0v">
+                                                    <rect key="frame" x="34" y="0.0" width="61.5" height="23"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHe-5C-Esx">
+                                                    <rect key="frame" x="103.5" y="0.0" width="10" height="23"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="YmQ-9A-VwU" firstAttribute="leading" secondItem="Kgb-FP-lmx" secondAttribute="leading" constant="20" symbolic="YES" id="8Tj-tm-ixN"/>
+                                        <constraint firstAttribute="bottom" secondItem="YmQ-9A-VwU" secondAttribute="bottom" constant="20" symbolic="YES" id="AA7-ls-0mm"/>
+                                        <constraint firstItem="YmQ-9A-VwU" firstAttribute="top" secondItem="Kgb-FP-lmx" secondAttribute="top" constant="20" symbolic="YES" id="JaC-oV-V5p"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="albumId" destination="PHe-5C-Esx" id="uXd-mP-ibd"/>
+                                    </connections>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0T2-Ns-u7f" firstAttribute="bottom" secondItem="Vxc-Nc-q94" secondAttribute="bottom" id="2lT-Mp-6YF"/>
+                            <constraint firstItem="0T2-Ns-u7f" firstAttribute="trailing" secondItem="Vxc-Nc-q94" secondAttribute="trailing" id="4nf-fO-aH4"/>
+                            <constraint firstItem="Vxc-Nc-q94" firstAttribute="top" secondItem="0T2-Ns-u7f" secondAttribute="top" id="dU7-UD-9Ih"/>
+                            <constraint firstItem="Vxc-Nc-q94" firstAttribute="leading" secondItem="0T2-Ns-u7f" secondAttribute="leading" id="nBV-Sq-88P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0T2-Ns-u7f"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Photo Gallery" image="photo.on.rectangle" catalog="system" id="OUj-82-4dC"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Vxc-Nc-q94" id="b7q-90-A5G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UBR-ZU-60b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="75.669642857142847"/>
+        </scene>
+        <!--Full Screen Photo View Controller-->
+        <scene sceneID="zUb-hx-eda">
+            <objects>
+                <viewController storyboardIdentifier="fullScreen" id="kQZ-SD-2Fl" customClass="FullScreenPhotoViewController" customModule="UIKit_Basic_Project_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q0v-RI-Pwe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B7x-oP-b8G">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hYH-7f-13K" appends="YES" id="IEf-Vx-d8n"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aNP-AC-xIk" firstAttribute="bottom" secondItem="B7x-oP-b8G" secondAttribute="bottom" id="0h3-hZ-5dz"/>
+                            <constraint firstItem="B7x-oP-b8G" firstAttribute="top" secondItem="aNP-AC-xIk" secondAttribute="top" id="I0X-WY-Cjy"/>
+                            <constraint firstItem="B7x-oP-b8G" firstAttribute="leading" secondItem="aNP-AC-xIk" secondAttribute="leading" id="ULL-Fc-j4W"/>
+                            <constraint firstItem="aNP-AC-xIk" firstAttribute="trailing" secondItem="B7x-oP-b8G" secondAttribute="trailing" id="VMT-M1-32Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aNP-AC-xIk"/>
+                    </view>
+                    <connections>
+                        <outlet property="fullScreenImage" destination="B7x-oP-b8G" id="A4b-sR-Foo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T5X-oi-vk3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hYH-7f-13K">
+                    <connections>
+                        <action selector="dismissView:" destination="kQZ-SD-2Fl" id="73X-qQ-o7W"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="784" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo.fill.on.rectangle.fill" catalog="system" width="64" height="48"/>
+        <image name="photo.on.rectangle" catalog="system" width="64" height="48"/>
+    </resources>
+</document>
